@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
      #自分のアプリケーション
-    'learning_logs'
+    'learning_logs',
      #デフォルトのdjangoアプリケーション   
     'django.contrib.admin',
     'django.contrib.auth',
