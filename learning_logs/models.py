@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf.urls import include
 
 # Create your models here.
 
@@ -23,7 +24,7 @@ class Entry(models.Model):
     def __str__(self):
         '''モデルの文字列表現を返す'''
         '''文字数により「...」の記載を調整'''
-        if text <= 25:
+        if len(self.text) <= 25:
             return f"{self.text[:25]}"
         else:
             return f"{self.text[:25]}..."    
